@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+body{
+     background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 30px; */
+  anchor-name: --someanchor
+}
+
+.box{
+    width: 120px;
+    height: 60px;
+    /* background-color: rgb(154, 36, 36); */
+    color: whitesmoke;
+    padding-inline: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    
+}
+
+
+ 
+.anchor{
+    /* width: 120px;
+    height: 60px; */
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    position: absolute;
+    top: anchor(top);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    left: anchor(left);
+    position-anchor: --someanchor ;
+    pointer-events: none;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;
+}
+
+.box:hover{
+    anchor-name: --someanchor;
+}
